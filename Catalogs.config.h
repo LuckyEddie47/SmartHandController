@@ -15,6 +15,7 @@
   #include "src/catalogs/data/stars.h"           // Catalog of 408 bright stars
   #include "src/catalogs/data/stf.h"             // Struve STF catalog, limited to 4313 double stars
   #include "src/catalogs/data/stt.h"             // Struve STT catalog, limited to 766 double stars
+  #include "src/catalogs/data/sao.h"             // Smithsonian Astrophysical Observatory catalog, limited to 710 double stars
   #include "src/catalogs/data/gcvs.h"            // General Catalog of Variable Stars, limited to 4478 stars brighter than Magnitude 11 w/ a difference in magnitude of >1 
 //#include "src/catalogs/data/carbon.h"          // Carbon Variable Stars, S&T list of 101 stars
   #include "src/catalogs/data/messier.h"         // Charles Messier's famous catalog of 109 DSO's
@@ -23,6 +24,7 @@
   #include "src/catalogs/data/collinder.h"       // The Collinder catalog of 471 open clusters
   #include "src/catalogs/data/ngc.h"             // The New General Catalog of 8154 DSO's
   #include "src/catalogs/data/ic.h"              // The Index Catalog (supplement) of 5400 DSO's
+
 #else // Teensy3.2
   #include "src/catalogs/data/stars_vc.h"        // Catalog of 408 bright stars
   #include "src/catalogs/data/stf_select_c.h"    // Struve STF catalog, limited to 595 double stars brighter than Magnitude 8.5
@@ -45,6 +47,7 @@ catalog_t catalog[] = {
   {"Stars>"     Cat_Stars_Title,    Cat_Stars_Prefix,    NUM_STARS,    Cat_Stars,    Cat_Stars_Names,     Cat_Stars_SubId,      Cat_Stars_Type,     2000, 0},
   {"Stars>"     Cat_STF_Title,      Cat_STF_Prefix,      NUM_STF,      Cat_STF,      Cat_STF_Names,       Cat_STF_SubId,        Cat_STF_Type,       2000, 0},
   {"Stars>"     Cat_STT_Title,      Cat_STT_Prefix,      NUM_STT,      Cat_STT,      Cat_STT_Names,       Cat_STT_SubId,        Cat_STT_Type,       2000, 0},
+  {"Stars>"     Cat_SAO_Title,      Cat_SAO_Prefix,      NUM_SAO,      Cat_SAO,      Cat_SAO_Names,       Cat_SAO_SubId,        Cat_SAO_Type,       2000, 0},
   {"Stars>"     Cat_GCVS_Title,     Cat_GCVS_Prefix,     NUM_GCVS,     Cat_GCVS,     Cat_GCVS_Names,      Cat_GCVS_SubId,       Cat_GCVS_Type,      2000, 0},
 //{"Stars>"     Cat_Carbon_Title,   Cat_Carbon_Prefix,   NUM_CARBON,   Cat_Carbon,   Cat_Carbon_Names,    Cat_Carbon_SubId,     Cat_Carbon_Type,    2000, 0},
   {"Deep Sky>"  Cat_Messier_Title,  Cat_Messier_Prefix,  NUM_MESSIER,  Cat_Messier,  Cat_Messier_Names,   Cat_Messier_SubId,    Cat_Messier_Type,   2000, 0},
